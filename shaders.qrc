@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>sh_triangle.frag</file>
+        <file>sh_triangle.vert</file>
+    </qresource>
+</RCC>
