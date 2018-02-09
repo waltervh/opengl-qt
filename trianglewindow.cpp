@@ -13,8 +13,8 @@ TriangleWindow::TriangleWindow()
 void TriangleWindow::initialize()
 {
     m_program = new QOpenGLShaderProgram(this);
-    m_program->addShaderFromSourceFile(QOpenGLShader::Vertex, ":/sh_triangle.vert");
-    m_program->addShaderFromSourceFile(QOpenGLShader::Fragment, ":/sh_triangle.frag");
+    m_program->addShaderFromSourceFile(QOpenGLShader::Vertex, ":/shader.vert");
+    m_program->addShaderFromSourceFile(QOpenGLShader::Fragment, ":/shader.frag");
     m_program->link();
     m_posAttr = m_program->attributeLocation("posAttr");
     m_colAttr = m_program->attributeLocation("colAttr");
